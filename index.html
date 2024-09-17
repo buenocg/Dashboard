@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+  <title>Dashboard iFood</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="main-menu">
+        <h2> Cockpit   
+          <img src="./img/image.png"/>
+        </h2>
+        <div class="top-menu">
+          <div>
+            <img class="icon" src="./assets/icons/search.svg" alt="search" />
+          </div>
+          <div>
+            <img
+              class="icon" src="./assets/icons/bell.svg" alt="notifications" />
+          </div>
+          <div>
+            <img src="./assets/icons/avatar.svg" alt="avatar" />
+            <p>Marcela F. Silva</p> 
+            
+          </div>
+          <div>
+            <img src="./assets/icons/chevron-down.svg" alt="dropdown" />
+          </div>
+        </div>
+      </header>
+
+      <nav id="side-menu">
+        <div class="nav">
+          <div class="container-menu">
+            <div class="logo">
+              <div>
+               <img  id="logo" src=".//img/image1.png" />
+              </div>
+              <p>Parceiros</p>
+
+               <img
+                class="icon chevron-icon"
+                src="./assets/icons/chevron-left.svg"
+                alt=""
+              />
+             </div>
+            <div class="text-box"> Loja Fechada ! <br> Fora do horario <br> </div>
+             
+            <div class="components">
+              <div class="main-menu">
+                <div class="component">
+                  <img src="./assets/icons/dashboard.svg" alt="" />
+                  <p class="text-menu">Dashboard</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/inbox.svg" alt="" />
+                  <p class="text-menu">Mensagens</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/schedule.svg" alt="" />
+                  <p class="text-menu">Serviços</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/communities.svg" alt="" />
+                  <p class="text-menu">Pesquisa</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/analytics.svg" alt="" />
+                  <p class="text-menu">Perfil</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/file_folders.svg" alt="" />
+                  <p class="text-menu">Avaliações</p>
+                </div>
+                <div class="component">
+                  <img src="./assets/icons/settings.svg" alt="" />
+                  <p class="text-menu">Serviços</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="help">
+            <div class="wrapper-box">
+              <div class="help-box">
+                <img src=".//img/image.png" alt="" />
+                <p>Precisa de <span>ajuda</span> ?</p>
+                <div class="button">
+                  <p><a style="color:hsl(0, 0%, 100%)" href="https://blog-parceiros.ifood.com.br/canais-de-contato-ifood/" target="blank"> Clique aqui</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- aqui  inicio cards -->
+
+      <main>
+        <section id="main-chart">
+          <div class="text-reach">  <h3> Acompanhamento de vendas</h3> <p class="sub-title"> atualizado as 12:33 </p></div>
+          <header>
+
+            <div class="wrapper-reach">                        
+              <div class="card-reach">
+                <div class="box-image total-reach">
+                  <img src="/assets/icons/rectangle.svg" alt="" />
+
+
+                </div>
+                <div class="text-reach">
+                  <p class="sub-title">Média mensal </p>
+                  <h3>185K</h3>
+                </div>
+              </div>
+              <div class="card-reach">
+                <div class="box-image total-paid">
+                  <img src="/assets/icons/rectangle_green.svg" alt="" />
+                  <div></div>
+                  <img src="/assets/icons/polygon_green.svg" alt="" />
+                </div>
+                <div class="text-reach">
+                  <p class="sub-title">Média Semanal</p>
+                  <h3>75K</h3>
+                </div>
+              </div>
+              <div class="card-reach">
+                <div class="box-image total-organic">
+                  <img src="/assets/icons/rectangle-rose.svg" alt="" />
+                  <img src="/assets/icons/polygon-rose.svg"" alt="" />
+                </div>
+                <div class="text-reach">
+                  <p class="sub-title">Total Diária</p>
+                  <h3>35K</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-filter">
+              <div class="filters">
+                <div class="filter selected">
+                  <p>Mensal</p>
+                </div>
+                <div class="filter">
+                  <p>Semanal</p>
+                </div>
+                <div class="filter">
+                  <p>Diário</p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="chart">
+            <canvas id="chartMain" width="700" height="200"> </canvas>
+          </div>
+        </section>
+
+
+<!-- card extrato -->
+        <section id="extrato">
+          <header>
+            <div class="title">
+              <div>
+                <img src="./assets/icons/dashboard.svg" alt="" />
+                
+              </div>
+              <h3>Extrato</h3>
+            </div>
+            <div class="detail">
+              <p>extrato</p>
+              <img src="./assets/icons/chevron-right.svg" alt="" />
+            </div>
+          </header>
+          <div class="wrapper-extrato">
+            <div class="chart-extrato">
+              <canvas id="myChart" width="200" height="400"></canvas>
+              <h5>Cartões</h5>
+            </div>
+            <div class="audience-age">
+              <h4 class="title-audience">Resumo de Agosto</h4>
+              <div class="progress-bar-group">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+                <div class="fourth"></div>
+              </div>
+              <div class="age-group">
+                <div class="first-circle"></div>
+                <div> Despesas</div>
+                <h4>21K</h4>
+                <div>30%</div>
+              </div>
+              <div class="age-group">
+                <div class="second-circle"></div>
+                <div>Receitas</div>
+                <h4>64K</h4>
+                <div>42%</div>
+              </div>
+              <div class="age-group">
+                <div class="third-circle"></div>
+                <div>Recebidos</div>
+                <h4>18K</h4>
+                <div>18%</div>
+              </div>
+              <div class="age-group">
+                <div class="fourth-circle"></div>
+                <div>Pagos</div>
+                <h4>5K</h4>
+                <div>10%</div>
+              </div>
+            </div>
+          </div>
+          <div class="extrato-link">
+            <p> O saldo é liquido para todas as contas que estão incluidas no cadastro de contas, o valores das faturas do cartão de credito são atualizados de acordo com as comprar enviados pelo emissor do cartão.</p>
+            <p> Para consultar os cartões e contas cadastradas<a style="color:hsl(0, 3%, 39%)" href="https://blog-parceiros.ifood.com.br/canais-de-contato-ifood/"> Clique aqui! </a></p>
+          </div>
+        </section>
+
+
+<!--  motor vendas -->        
+        <section id="motor-vendas">
+          <header>
+            <div class="title">
+              <div>
+                <img src="./assets/icons/pipe.svg" alt="" />
+              </div>
+              <h3>Motor de vendas</h3>
+            </div>
+            <div class="detail">
+              <p>expandir</p>
+              <img src="./assets/icons/chevron-right.svg" alt="" />
+            </div>
+          </header>
+          <div class="wrapper-channels">
+            <div class="head">
+              <p class="sub-title">Campanha</p>
+              <p class="sub-title">Visitas</p>
+            </div>
+            <div class="channel">
+              <div>
+                <img src="./assets/icons/instagram.svg" alt="" />
+                <h4 class="channel-name">Instagram</h4>
+                <h4>124K</h4>
+                <p>+12%</p>
+                <div class="container-bar">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="channel">
+              <div>
+                <img src="./assets/icons/youtube.svg" alt="" />
+                <h4 class="channel-name">Youtube</h4>
+                <h4>124K</h4>
+                <p>+12%</p>
+                <div class="container-bar">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="channel">
+              <div>
+                <img src="./assets/icons/facebook.svg" alt="" />
+                <h4 class="channel-name">facebook</h4>
+                <h4>124K</h4>
+                <p>+27%</p>
+                <div class="container-bar">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="channel">
+              <div>
+                <img src="./assets/icons/search.svg" alt="" />
+                <h4 class="channel-name">Outros</h4>
+                <h4>24K</h4>
+                <p>+12%</p>
+                <div class="container-bar">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!-- card vendas -->
+        <section id="vendas">
+          <header>
+            <div class="title">
+              <div>
+                <img src="./assets/icons/dashboard.svg" alt="" />
+                
+              </div>
+              <h3>Últimos pedidos </h3>
+            </div>
+            <div class="detail">
+              <p>consulta</p>
+              <img src="./assets/icons/chevron-right.svg" alt="" />
+            </div>
+          </header>
+          <table class="tabela">
+            <thead>
+                <tr>
+                  <th><img src="./assets/icons/chevron-down.svg" /></th>  
+                  <th><img src="./assets/icons/chevron-down.svg" /></th>
+                  <th><img src="./assets/icons/chevron-down.svg" /></th>
+                  <th><img src="./assets/icons/chevron-down.svg" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedido Nº 4082</td>
+                    <td> 21/08/2024 às 9:45</td>
+                    <td>Valor R$ 79,00 </td>
+                    <td>Concluído</td>
+                </tr>
+                <tr>
+                  <td>Pedido Nº 2310</td>
+                  <td> 2/08/2024 às 10:42</td>
+                  <td>Valor R$ 147,00 </td>
+                  <td>Em rota de entrega </td>
+                </tr>
+                <tr>
+                  <td>Pedido Nº 2492</td>
+                  <td> 21/08/2024 às 11:45</td>
+                  <td>Valor R$ 279,00 </td>
+                  <td>Em separação</td>
+                </tr>
+                <tr>
+                  <td>Pedido Nº 3282</td>
+                  <td> 21/08/2024 às 12:05</td>
+                  <td>Valor R$ 202,00 </td>
+                  <td>Concluído</td>
+                </tr>
+                <tr>
+                  <td>Pedido Nº 9982</td>
+                  <td> 21/08/2024 às 12:45</td>
+                  <td>Valor R$ 194,10 </td>
+                  <td>Concluído</td>
+                </tr>
+                  <td>Pedido Nº 1288</td>
+                  <td> 21/08/2024 às 13:22</td>
+                  <td>Valor R$ 321,00 </td>
+                 <td>Concluído</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+<!--  score-->        
+      <section id="score">
+        <header>
+          <div class="title">
+            <div>
+              <img src="./assets/icons/pipe.svg" alt="" />
+            </div>
+            <h3>Desempenho</h3>
+          </div>
+          <div class="detail">
+            <p>ver</p>
+            <img src="./assets/icons/chevron-right.svg" alt="" />
+          </div>
+        </header>
+        <div class="imagem-container">
+          <div> 
+            <a> Seu score esta alto !!</a>
+          </div>
+            <div class="image-wrapper">
+              <div id="circulo1"><div id="circulo2"><div id="circulo3"></div></div>  
+              </div>
+              <h4> Seu score atual é  68</h4>
+            </div>
+
+        </div>
+      </section>
+
+<!--   card repasse--> 
+              <section id="repasse">
+                <header>
+                  <div class="title">
+                    <div>
+                      <img src="./assets/icons/dashboard.svg" alt="" />
+                      
+                    </div>
+                    <h3>Repasses </h3>
+                  </div>
+                  <div class="detail">
+                    <p>solicitar</p>
+                    <img src="./assets/icons/chevron-right.svg" alt="" />
+                  </div>
+                </header>
+                <table class="tabela">
+                  <thead>
+                      <tr> 
+                         <th><img src="./assets/icons/chevron-down.svg" /></th>
+                         <th><img src="./assets/icons/chevron-down.svg" /></th>
+                         <th><img src="./assets/icons/chevron-down.svg" /></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td> 14/07/2024 às 9:45</td>
+                          <td>Valor R$ 1.790,00 </td>
+                          <td>Concluído</td>
+                      </tr>
+                      <tr>
+                        <td> 18/08/2024 às 10:42</td>
+                        <td>Valor R$ 2.247,00 </td>
+                        <td>Concluído</td>
+                      </tr>
+                      <tr>
+                        <td> 27/08/2024 às 11:45</td>
+                        <td>Valor R$ 1.279,00 </td>
+                        <td>Aguardando</td>
+                      </tr>
+                      <tr>
+                        <td> 02/09/2024 às 10:22</td>
+                        <td>Valor R$ 895,00 </td>
+                        <td>Aguardando</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </section>
+        
+
+<!--   card ofertas--> 
+            <section id="ofertas">
+              <header>
+                <div class="title">
+                  <div>
+                    <img src="./assets/icons/dashboard.svg" alt="" />
+                    
+                  </div>
+                  <h3>Ofertas </h3>
+                </div>
+                <div class="detail">
+                  <p>ver ofertas</p>
+                  <img src="./assets/icons/chevron-right.svg" alt="" />
+                </div>
+              </header>
+              <table class="tabela">
+                <thead>
+                  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Abra sua conta digital Ifood</td>
+                          <a href="https://blog-parceiros.ifood.com.br/canais-de-contato-ifood/">  </a>
+                    </tr>
+                    <tr>
+                      <td> Crédito Ifood - Feito para você ! </td>
+                    </tr>
+                    <tr>
+                      <td> Ifood Shop</td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
